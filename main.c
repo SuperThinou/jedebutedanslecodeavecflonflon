@@ -3,7 +3,7 @@
 
 int main()
 {
-    unsigned int merde = 20;
+    unsigned int merde = 1;
 
     printf("J'ai %d euros dans ma poche !\n\n", merde);
 
@@ -11,7 +11,9 @@ int main()
 
     merde = 7;
 
-    printf("Donc il me reste %d euros poil au dos !\n", merde);
+    printf("Donc il me reste %d euros poil au dos !\n\n", merde);
+
+    printf("Je mange des boulons au jambon\n\n");
 
     return 0;
 }
