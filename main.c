@@ -1,19 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main()
+int flofloVoleMonArgent(int monArgent, int argentVole)
 {
-    unsigned int merde = 1;
+    printf("Flonflon me vole un peu d'argent (%d GTA$) ...\n", argentVole);
 
-    printf("J'ai %d euros dans ma poche !\n\n", merde);
+    monArgent = monArgent - argentVole;
 
-    printf("Flonflon me vole un peu d'argent\n\n");
+    printf("Il me reste seulement %d GTA$...\n\n", monArgent);
 
-    merde = 7;
+    return monArgent;
+}
 
-    printf("Donc il me reste %d euros poil au dos !\n\n", merde);
+void main()
+{
+    unsigned int monArgent = 100;
 
-    printf("Je mange des boulons au jambon\n\n");
+    printf("J'ai %d euros dans ma poche !\n\n", monArgent);
 
-    return 0;
+    monArgent = flofloVoleMonArgent(monArgent, 20);
+    monArgent = flofloVoleMonArgent(monArgent, 20);
+    monArgent = flofloVoleMonArgent(monArgent, 20);
+    monArgent = flofloVoleMonArgent(monArgent, 20);
+    monArgent = flofloVoleMonArgent(monArgent, 20);
 }
