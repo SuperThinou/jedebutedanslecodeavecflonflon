@@ -1,0 +1,36 @@
+body {
+    font-family: 'Indie Flower', cursive;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    border: none;
+    background: green;
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: fit-content;
+    transition: ease-in 250ms;
+}
+
+button:hover {
+    background: red;
+    padding: 4px 20px;
+}
+
+button:hover ~ img {
+    opacity: 0;
+}
+
+img {
+    width: fit-content;
+    margin: 5px auto;
+    transition: ease-in 250ms;
+}
+
+.mon-bouton-bleu {
+    background: blue;
+}
