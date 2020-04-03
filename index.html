@@ -24,13 +24,11 @@
 
     <script>
         $('#bouton-2').click(function() {
-            console.log( 'Le résultat est :' + $('img').css('opacity'))
-
-            if($('img').css('opacity') == 0) {
-                $('img').css('opacity', 100)
-            } else {
-                $('img').css('opacity', 0)
-            }
+            $.ajax({
+                url:"https://dog.ceo/api/breeds/image/random"
+            }).done(function(json) {
+                $('img').attr('src', json.message);
+            });
         });
     </script>
 
